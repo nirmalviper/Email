@@ -6,7 +6,7 @@ on:
     inputs:
       password:
         description: 'Password'
-        required: true
+        required: false
       branch:
         description: 'Branch'
         required: true
@@ -35,22 +35,44 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+    - name: Check signing configuration
+      id: signing
+      env:
+        INPUT_PASSWORD: ${{ github.event.inputs.password }}
+        KEYSTORE: ${{ secrets.KEYSTORE }}
+        KEYSTORE_PROPERTIES: ${{ secrets.KEYSTORE_PROPERTIES }}
+        LOCAL_PROPERTIES: ${{ secrets.LOCAL_PROPERTIES }}
+      run: |
+        if [[ -n "$INPUT_PASSWORD" && -n "$KEYSTORE" && -n "$KEYSTORE_PROPERTIES" && -n "$LOCAL_PROPERTIES" ]]; then
+          echo "configured=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "configured=false" >> "$GITHUB_OUTPUT"
+          echo "::notice::Signing secrets are incomplete; building an unsigned githubDebug APK."
+        fi
+
     #https://github.com/actions/runner/issues/643
     - name: Mask password
+      if: steps.signing.outputs.configured == 'true'
+      env:
+        INPUT_PASSWORD: ${{ github.event.inputs.password }}
       run: |
-        INP_PASSWORD=$(jq -r '.inputs.password' $GITHUB_EVENT_PATH)
-        echo ::add-mask::$INP_PASSWORD
-        echo PASSWORD="$INP_PASSWORD" >> $GITHUB_ENV
+        echo "::add-mask::$INPUT_PASSWORD"
+        printf 'PASSWORD=%s\n' "$INPUT_PASSWORD" >> "$GITHUB_ENV"
 
     #https://stefma.medium.com/how-to-store-a-android-keystore-safely-on-github-actions-f0cef9413784
     #gpg -c --armor --s2k-mode 3 --s2k-digest-algo SHA256 --s2k-count 10000000 --cipher-algo AES-256 <file>
     - name: Decrypt secrets
+      if: steps.signing.outputs.configured == 'true'
+      env:
+        KEYSTORE: ${{ secrets.KEYSTORE }}
+        KEYSTORE_PROPERTIES: ${{ secrets.KEYSTORE_PROPERTIES }}
+        LOCAL_PROPERTIES: ${{ secrets.LOCAL_PROPERTIES }}
       run: |
-        echo "${{ secrets.KEYSTORE }}" > keystore.asc
+        printf '%s' "$KEYSTORE" > keystore.asc
         gpg -d --passphrase "${PASSWORD}" --batch keystore.asc > Android.keystore
-        echo "${{ secrets.KEYSTORE_PROPERTIES }}" > keystore.properties.asc
+        printf '%s' "$KEYSTORE_PROPERTIES" > keystore.properties.asc
         gpg -d --passphrase "${PASSWORD}" --batch keystore.properties.asc > keystore.properties
-        echo "${{ secrets.LOCAL_PROPERTIES }}" > local.properties.asc
+        printf '%s' "$LOCAL_PROPERTIES" > local.properties.asc
         gpg -d --passphrase "${PASSWORD}" --batch local.properties.asc > local.properties
 
     - name: Grant execute permission for gradlew
@@ -61,16 +83,22 @@ jobs:
 
     - name: Build with Gradle
       env:
+        SIGNING_CONFIGURED: ${{ steps.signing.outputs.configured }}
         JAVA_TOOL_OPTIONS: "-XX:ActiveProcessorCount=1"
-      run: >-
-        ./gradlew --no-daemon --max-workers=1
-        --no-build-cache --no-configuration-cache
-        assembleGithubRelease assembleLargeRelease assemblePlayRelease
+      run: |
+        if [[ "$SIGNING_CONFIGURED" == "true" ]]; then
+          ./gradlew --no-daemon --max-workers=1 --no-build-cache --no-configuration-cache \
+            assembleGithubRelease assembleLargeRelease assemblePlayRelease
+        else
+          ./gradlew --no-daemon --max-workers=1 --no-build-cache --no-configuration-cache \
+            assembleGithubDebug
+        fi
 
     #https://docs.github.com/en/actions/security-guides/using-artifact-attestations-to-establish-provenance-for-builds
     #https://github.com/actions/attest-build-provenance
     - name: Generate artifact attestation
       uses: actions/attest-build-provenance@v4
+      if: steps.signing.outputs.configured == 'true'
       with:
         subject-path: 'app/build/outputs/apk/**/release/*.apk'
 
@@ -82,16 +110,27 @@ jobs:
     #https://github.com/actions/upload-artifact
 
     - uses: actions/upload-artifact@v6
+      if: steps.signing.outputs.configured == 'true'
       with:
         name: Mapping files
         path: app/build/outputs/mapping/**/mapping.txt
 
     - uses: actions/upload-artifact@v6
+      if: steps.signing.outputs.configured == 'true'
       with:
         name: Native debug symbols
         path: app/build/outputs/native-debug-symbols/**/native-debug-symbols.zip
 
-    - uses: actions/upload-artifact@v6
+    - name: Upload signed APKs
+      if: steps.signing.outputs.configured == 'true'
+      uses: actions/upload-artifact@v6
       with:
-        name: APK files
+        name: APK files (signed release)
         path: app/build/outputs/apk/**/release/*.apk
+
+    - name: Upload test APK
+      if: steps.signing.outputs.configured != 'true'
+      uses: actions/upload-artifact@v6
+      with:
+        name: APK files (unsigned debug)
+        path: app/build/outputs/apk/github/debug/*.apk
