@@ -27,17 +27,17 @@
     <color name="colorWidgetBackground">#7f000000</color>
     <color name="colorWidgetRead">#ddd</color>
 
-    <color name="lightColorItemSelected">#ccc</color>
-    <color name="lightColorSeparator">#ccc</color>
+    <color name="lightColorItemSelected">#dbeafe</color>
+    <color name="lightColorSeparator">#dce3ed</color>
     <color name="lightColorThumb">#ccc</color>
     <color name="lightColorWarning">#ffff4f00</color>
 
     <color name="lightColorDrawerScrim">#99000000</color>
     <color name="lightColorDrawerText">#111</color>
-    <color name="lightColorDrawerBackground">#eee</color>
+    <color name="lightColorDrawerBackground">#f1f5f9</color>
 
     <color name="lightColorCardBackground">#fff</color>
-    <color name="lightColorBackground_cards">#eee</color>
+    <color name="lightColorBackground_cards">#f1f5f9</color>
     <!-- Cosmic Latte -->
     <color name="lightColorBackground_cards_beige">#fff8e7</color>
 
@@ -47,20 +47,28 @@
 
     <color name="whiteActionForegroundDisabled">#aaa</color>
 
-    <color name="darkColorItemSelected">#555</color>
-    <color name="darkColorSeparator">#444</color>
+    <color name="darkColorItemSelected">#1e3a5f</color>
+    <color name="darkColorSeparator">#2b3648</color>
     <color name="darkColorThumb">#555</color>
     <color name="darkColorWarning">#ffffae42</color>
 
     <color name="darkColorDrawerScrim">#997f7f7f</color>
     <color name="darkColorDrawerText">#fff</color>
-    <color name="darkColorDrawerBackground">#222</color>
+    <color name="darkColorDrawerBackground">#111827</color>
 
-    <color name="darkColorCardBackground">#222</color>
+    <color name="darkColorCardBackground">#151e2d</color>
 
     <color name="darkActionForeground">#fff</color>
     <color name="darkActionForegroundDisabled">#666</color>
-    <color name="darkActionBackground">#444</color>
+    <color name="darkActionBackground">#273449</color>
+
+    <color name="lightAppBackground">#f7f9fc</color>
+    <color name="darkAppBackground">#0b0f19</color>
+    <color name="modernPrimaryLight">#2563eb</color>
+    <color name="modernPrimaryDark">#3b82f6</color>
+    <color name="modernPrimaryDarkVariant">#1d4ed8</color>
+    <color name="modernAccentLight">#087f9c</color>
+    <color name="modernAccentDark">#22d3ee</color>
 
     <!-- Light blue 600 / Amber 600 -->
     <color name="lightBluePrimary">#039be5</color>

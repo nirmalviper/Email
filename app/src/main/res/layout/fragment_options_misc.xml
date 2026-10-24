@@ -52,8 +52,8 @@
             android:layout_marginHorizontal="3dp"
             android:layout_marginTop="24dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvDefault">
@@ -703,8 +703,8 @@
             android:layout_marginHorizontal="3dp"
             android:layout_marginTop="24dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardGeneral">
@@ -955,8 +955,8 @@
             android:layout_marginTop="24dp"
             android:tag="nosuggest"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardAdvanced">

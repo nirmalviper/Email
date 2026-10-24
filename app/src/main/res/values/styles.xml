@@ -30,6 +30,7 @@
     <style name="AppThemeBaseLight" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="themeName">light</item>
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowBackground">@color/lightAppBackground</item>
         <item name="android:windowSplashScreenBackground" tools:targetApi="s">
             @color/splashBackground
         </item>
@@ -79,6 +80,8 @@
         <item name="colorDrawerBackground">@color/lightColorDrawerBackground</item>
 
         <item name="colorCardBackground">@color/lightColorCardBackground</item>
+        <item name="colorBackgroundFloating">?attr/colorCardBackground</item>
+        <item name="android:colorBackgroundFloating">?attr/colorCardBackground</item>
 
         <item name="colorActionForeground">@color/lightActionForeground</item>
         <item name="colorActionForegroundDisabled">@color/lightActionForegroundDisabled</item>
@@ -106,6 +109,7 @@
         <item name="themeName">dark</item>
         <item name="isLightTheme">false</item>
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowBackground">@color/darkAppBackground</item>
         <item name="android:windowSplashScreenBackground" tools:targetApi="s">
             @color/splashBackground
         </item>
@@ -173,9 +177,9 @@
         <item name="android:scrollbarTrackVertical">@drawable/scroll_track</item>
         <item name="android:scrollbarFadeDuration">5000</item>
 
-        <item name="colorBackgroundFloating">@color/material_grey_850</item>
+        <item name="colorBackgroundFloating">?attr/colorCardBackground</item>
         <item name="android:colorBackgroundFloating" tools:targetApi="23">
-            @color/material_grey_850
+            ?attr/colorCardBackground
         </item>
 
         <item name="viewInflaterClass">eu.faircode.email.AppCompatViewInflaterEx</item>
@@ -184,19 +188,19 @@
     <!-- Light -->
 
     <style name="AppThemeBlueOrangeLight" parent="AppThemeBaseLight">
-        <item name="colorPrimary">@color/lightBluePrimary</item>
-        <item name="colorPrimaryDark">@color/lightBluePrimaryDark</item>
-        <item name="colorAccent">@color/lightAmberAccent</item>
+        <item name="colorPrimary">@color/modernPrimaryLight</item>
+        <item name="colorPrimaryDark">@color/modernPrimaryDarkVariant</item>
+        <item name="colorAccent">@color/modernAccentLight</item>
 
-        <item name="colorUnreadHighlight">@color/lightAmberAccentDark</item>
+        <item name="colorUnreadHighlight">@color/modernAccentLight</item>
 
-        <item name="colorFabBackground">@color/lightAmberAccent</item>
+        <item name="colorFabBackground">@color/modernPrimaryLight</item>
 
         <item name="colorInfoForeground">@color/white</item>
-        <item name="colorInfoBackground">@color/lightBluePrimary</item>
+        <item name="colorInfoBackground">@color/modernPrimaryLight</item>
 
-        <item name="android:textColorLink">@color/lightAmberAccentDark</item>
-        <item name="android:textColorLinkInverse">@color/lightAmberAccentDark</item>
+        <item name="android:textColorLink">@color/modernAccentLight</item>
+        <item name="android:textColorLinkInverse">@color/modernAccentLight</item>
     </style>
 
     <style name="AppThemeOrangeBlueLight" parent="AppThemeBaseLight">
@@ -287,16 +291,16 @@
     <!-- Dark -->
 
     <style name="AppThemeBlueOrangeDark" parent="AppThemeBaseDark">
-        <item name="colorPrimary">@color/darkBluePrimary</item>
-        <item name="colorPrimaryDark">@color/darkBluePrimaryDark</item>
-        <item name="colorAccent">@color/darkAmberAccent</item>
+        <item name="colorPrimary">@color/modernPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/modernPrimaryDarkVariant</item>
+        <item name="colorAccent">@color/modernAccentDark</item>
 
-        <item name="colorUnreadHighlight">@color/darkAmberAccent</item>
+        <item name="colorUnreadHighlight">@color/modernAccentDark</item>
 
-        <item name="colorFabBackground">@color/darkAmberAccent</item>
+        <item name="colorFabBackground">@color/modernAccentDark</item>
 
         <item name="colorInfoForeground">@color/white</item>
-        <item name="colorInfoBackground">@color/darkBluePrimary</item>
+        <item name="colorInfoBackground">@color/modernPrimaryDarkVariant</item>
     </style>
 
     <style name="AppThemeOrangeBlueDark" parent="AppThemeBaseDark">
