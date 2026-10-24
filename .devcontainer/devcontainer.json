@@ -1,0 +1,10 @@
+{
+  "name": "Android Development Cloud Environment",
+  "image": "://microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    }
+  },
+  "postCreateCommand": "mkdir -p env && cd env && wget https://google.com && unzip *.zip && mkdir -p cmdline-tools/latest && mv cmdline-tools/* cmdline-tools/latest/ 2>/dev/__null || true"
+}
