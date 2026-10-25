@@ -69,9 +69,9 @@
     <color name="mailTextPrimary">#f8fafc</color>
     <color name="mailTextSecondary">#cbd5e1</color>
     <color name="mailTextMuted">#94a3b8</color>
-    <color name="mailTextPrimary">#e5edf7</color>
-    <color name="mailTextSecondary">#98a8bf</color>
-    <color name="mailTextMuted">#697a90</color>
+    <color name="mailTextPrimaryAlt">#e5edf7</color>
+    <color name="mailTextSecondaryAlt">#98a8bf</color>
+    <color name="mailTextMutedAlt">#697a90</color>
 
     <color name="darkActionForeground">#fff</color>
     <color name="darkActionForegroundDisabled">#666</color>
