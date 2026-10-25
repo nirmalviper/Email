@@ -42,6 +42,7 @@ jobs:
           echo "configured=true" >> "$GITHUB_OUTPUT"
         else
           echo "configured=false" >> "$GITHUB_OUTPUT"
+          echo "::notice::Signing secrets are incomplete; building an unsigned githubDebug APK."
         fi
 
     - name: Mask password
@@ -80,8 +81,18 @@ jobs:
           ./gradlew --no-daemon --max-workers=1 assembleGithubDebug
         fi
 
-    - name: Upload APK
+    - name: Upload APK (signed release)
+      if: steps.signing.outputs.configured == 'true'
       uses: actions/upload-artifact@v6
       with:
-        name: APK
-        path: app/build/outputs/apk/**/apk/*.apk
+        name: APK (signed release)
+        path: app/build/outputs/apk/github/release/*.apk
+        if-no-files-found: error
+
+    - name: Upload APK (unsigned debug)
+      if: steps.signing.outputs.configured != 'true'
+      uses: actions/upload-artifact@v6
+      with:
+        name: APK (unsigned debug)
+        path: app/build/outputs/apk/github/debug/*.apk
+        if-no-files-found: error
