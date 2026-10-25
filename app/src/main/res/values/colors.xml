@@ -48,26 +48,35 @@
     <color name="whiteActionForegroundDisabled">#aaa</color>
 
     <color name="darkColorItemSelected">#1e3a5f</color>
-    <color name="darkColorSeparator">#2b3648</color>
+    <color name="darkColorSeparator">#243043</color>
     <color name="darkColorThumb">#555</color>
     <color name="darkColorWarning">#ffffae42</color>
 
     <color name="darkColorDrawerScrim">#997f7f7f</color>
     <color name="darkColorDrawerText">#fff</color>
-    <color name="darkColorDrawerBackground">#111827</color>
+    <color name="darkColorDrawerBackground">#0b0f19</color>
 
-    <color name="darkColorCardBackground">#151e2d</color>
+    <color name="darkColorCardBackground">#121826</color>
+    <color name="mailSurfaceDark">#0b0f19</color>
+    <color name="mailSurfaceMid">#121826</color>
+    <color name="mailSurfaceElevated">#182334</color>
+    <color name="mailAccentCyan">#22d3ee</color>
+    <color name="mailAccentViolet">#8b5cf6</color>
+    <color name="mailAccentEmerald">#34d399</color>
+    <color name="mailTextPrimary">#e5edf7</color>
+    <color name="mailTextSecondary">#98a8bf</color>
+    <color name="mailTextMuted">#697a90</color>
 
     <color name="darkActionForeground">#fff</color>
     <color name="darkActionForegroundDisabled">#666</color>
     <color name="darkActionBackground">#273449</color>
 
-    <color name="lightAppBackground">#f7f9fc</color>
+    <color name="lightAppBackground">#f4f7fb</color>
     <color name="darkAppBackground">#0b0f19</color>
-    <color name="modernPrimaryLight">#2563eb</color>
-    <color name="modernPrimaryDark">#3b82f6</color>
-    <color name="modernPrimaryDarkVariant">#1d4ed8</color>
-    <color name="modernAccentLight">#087f9c</color>
+    <color name="modernPrimaryLight">#121826</color>
+    <color name="modernPrimaryDark">#121826</color>
+    <color name="modernPrimaryDarkVariant">#0b0f19</color>
+    <color name="modernAccentLight">#007f9c</color>
     <color name="modernAccentDark">#22d3ee</color>
 
     <!-- Light blue 600 / Amber 600 -->

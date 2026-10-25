@@ -49,11 +49,11 @@
             android:id="@+id/cardIntegrations"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvDefault">
@@ -61,8 +61,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <TextView
                     android:id="@+id/tvIntegrationsHint"
@@ -92,11 +92,11 @@
             android:id="@+id/cardLanguageTool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardIntegrations">
@@ -104,8 +104,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/swLanguageTool"
@@ -295,11 +295,11 @@
             android:id="@+id/cardDeepL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardLanguageTool">
@@ -307,8 +307,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/swDeepL"
@@ -378,11 +378,11 @@
             android:id="@+id/cardVirusTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardDeepL">
@@ -390,8 +390,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/swVirusTotal"
@@ -480,11 +480,11 @@
             android:id="@+id/cardSend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardVirusTotal">
@@ -492,8 +492,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/swSend"
@@ -548,11 +548,11 @@
             android:id="@+id/cardOpenAi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardSend">
@@ -560,8 +560,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/swOpenAi"
@@ -831,11 +831,11 @@
             android:id="@+id/cardGemini"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardOpenAi">
@@ -843,8 +843,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/swGemini"

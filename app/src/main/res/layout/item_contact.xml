@@ -7,7 +7,10 @@
         android:id="@+id/clItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="3dp">
+        android:background="?attr/activatableItemBackground"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingHorizontal="9dp"
+        android:paddingVertical="7dp">
 
         <ImageView
             android:id="@+id/ivType"
@@ -24,7 +27,10 @@
             android:layout_width="42dp"
             android:layout_height="0dp"
             android:layout_marginStart="6dp"
+            android:background="@drawable/mail_avatar_background"
+            android:clipToOutline="true"
             android:padding="3dp"
+            android:scaleType="centerCrop"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toEndOf="@id/ivType"
             app:layout_constraintTop_toTopOf="parent"

@@ -40,6 +40,7 @@
 
         <item name="android:windowDisablePreview">true</item>
         <item name="android:windowAnimationStyle">@style/activityAnimationStyle</item>
+        <item name="editTextStyle">@style/mailEditTextStyle</item>
 
         <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
@@ -119,21 +120,22 @@
 
         <item name="android:windowDisablePreview">true</item>
         <item name="android:windowAnimationStyle">@style/activityAnimationStyle</item>
+        <item name="editTextStyle">@style/mailEditTextStyle</item>
 
-        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorPrimary">@color/mailTextPrimary</item>
         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
         <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
-        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/mailTextSecondary</item>
         <item name="android:textColorSecondaryInverse">@color/abc_secondary_text_material_light</item>
-        <item name="android:textColorTertiary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorTertiary">@color/mailTextMuted</item>
         <item name="android:textColorTertiaryInverse">@color/abc_secondary_text_material_light</item>
-        <item name="android:textColorHint">@color/abc_hint_foreground_material_dark</item>
+        <item name="android:textColorHint">@color/mailTextMuted</item>
         <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_light</item>
         <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
         <item name="android:textColorHighlightInverse">@color/highlighted_text_material_light</item>
-        <item name="android:textColorLink">?attr/colorAccent</item>
-        <item name="android:textColorLinkInverse">?attr/colorAccent</item>
-        <item name="android:textColorAlertDialogListItem">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorLink">@color/mailAccentCyan</item>
+        <item name="android:textColorLinkInverse">@color/mailAccentCyan</item>
+        <item name="android:textColorAlertDialogListItem">@color/mailTextPrimary</item>
 
         <item name="colorRead">@color/colorReadDark</item>
         <item name="colorUnread">@color/colorUnreadDark</item>
@@ -157,12 +159,16 @@
         <item name="colorDrawerBackground">@color/darkColorDrawerBackground</item>
 
         <item name="colorCardBackground">@color/darkColorCardBackground</item>
+        <item name="colorPrimary">@color/mailSurfaceMid</item>
+        <item name="colorPrimaryDark">@color/mailSurfaceDark</item>
+        <item name="colorAccent">@color/mailAccentCyan</item>
 
         <item name="colorActionForeground">@color/darkActionForeground</item>
         <item name="colorActionForegroundDisabled">@color/darkActionForegroundDisabled</item>
         <item name="colorActionBackground">@color/darkActionBackground</item>
 
         <item name="colorFabForeground">@color/white</item>
+        <item name="colorFabBackground">@color/mailAccentViolet</item>
 
         <item name="activatableItemBackground">@drawable/activatable_item_background_dark</item>
 
@@ -657,6 +663,14 @@
     <style name="radioButtonStyle" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="mailEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/mail_compose_field</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
     </style>
 
     <style name="popupMenuStyle" parent="Base.Widget.AppCompat.PopupMenu">

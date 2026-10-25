@@ -49,11 +49,11 @@
             android:id="@+id/cardGeneral"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvDefault">
@@ -61,8 +61,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <TextView
                     android:id="@+id/tvCaptionGeneral"
@@ -211,11 +211,11 @@
             android:id="@+id/cardList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardGeneral">
@@ -223,8 +223,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <TextView
                     android:id="@+id/tvCaptionList"
@@ -386,11 +386,11 @@
             android:id="@+id/cardConversation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardList">
@@ -398,8 +398,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <TextView
                     android:id="@+id/tvCaptionConversation"
@@ -755,11 +755,11 @@
             android:id="@+id/cardAdvanced"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="?attr/colorCardBackground"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardConversation">
@@ -767,8 +767,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="6dp"
-                android:paddingVertical="12dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp">
 
                 <TextView
                     android:id="@+id/tvAdvanced"

@@ -14,7 +14,7 @@
             android:id="@+id/clItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/activatableItemBackground"
+            android:background="@drawable/mail_thread_row_background"
             android:descendantFocusability="beforeDescendants"
             android:focusable="true"
             android:focusableInTouchMode="true">
