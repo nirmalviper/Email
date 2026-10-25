@@ -57,12 +57,18 @@
     <color name="darkColorDrawerBackground">#0b0f19</color>
 
     <color name="darkColorCardBackground">#121826</color>
-    <color name="mailSurfaceDark">#0b0f19</color>
-    <color name="mailSurfaceMid">#121826</color>
-    <color name="mailSurfaceElevated">#182334</color>
-    <color name="mailAccentCyan">#22d3ee</color>
-    <color name="mailAccentViolet">#8b5cf6</color>
+    <color name="mailSurfaceDark">#0a0d14</color>
+    <color name="mailSurfaceMid">#10141d</color>
+    <color name="mailSurfaceElevated">#161b26</color>
+    <color name="mailSurfaceCard">#1c2230</color>
+    <color name="mailAccentCyan">#38bdf8</color>
+    <color name="mailAccentViolet">#a78bfa</color>
     <color name="mailAccentEmerald">#34d399</color>
+    <color name="mailAccentRose">#fb7185</color>
+    <color name="mailBorder">#2a3245</color>
+    <color name="mailTextPrimary">#f8fafc</color>
+    <color name="mailTextSecondary">#cbd5e1</color>
+    <color name="mailTextMuted">#94a3b8</color>
     <color name="mailTextPrimary">#e5edf7</color>
     <color name="mailTextSecondary">#98a8bf</color>
     <color name="mailTextMuted">#697a90</color>
@@ -71,13 +77,15 @@
     <color name="darkActionForegroundDisabled">#666</color>
     <color name="darkActionBackground">#273449</color>
 
-    <color name="lightAppBackground">#f4f7fb</color>
-    <color name="darkAppBackground">#0b0f19</color>
-    <color name="modernPrimaryLight">#121826</color>
-    <color name="modernPrimaryDark">#121826</color>
-    <color name="modernPrimaryDarkVariant">#0b0f19</color>
-    <color name="modernAccentLight">#007f9c</color>
-    <color name="modernAccentDark">#22d3ee</color>
+    <color name="lightAppBackground">#f8fafc</color>
+    <color name="darkAppBackground">#0a0d14</color>
+    <color name="modernPrimaryLight">#0f172a</color>
+    <color name="modernPrimaryDark">#0a0d14</color>
+    <color name="modernPrimaryDarkVariant">#05070a</color>
+    <color name="modernAccentLight">#0284c7</color>
+    <color name="modernAccentDark">#38bdf8</color>
+    <color name="modernAccentGradientStart">#38bdf8</color>
+    <color name="modernAccentGradientEnd">#a78bfa</color>
 
     <!-- Light blue 600 / Amber 600 -->
     <color name="lightBluePrimary">#039be5</color>

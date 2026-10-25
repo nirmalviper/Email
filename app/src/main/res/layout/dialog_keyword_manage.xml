@@ -40,6 +40,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/title_add"
         app:backgroundTint="?attr/colorFabBackground"
+        app:elevation="6dp"
         app:elevation="0dp"
         app:fabSize="mini"
         app:layout_constraintBottom_toBottomOf="parent"

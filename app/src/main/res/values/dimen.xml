@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <dimen name="fab_padding">15dp</dimen>
+    <dimen name="fab_padding">16dp</dimen>
     <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
     <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
     <dimen name="fastscroll_default_thickness" tools:override="true">6dp</dimen>
@@ -9,9 +9,30 @@
     <dimen name="bullet_radius_size">3dp</dimen>
     <dimen name="bullet_indent_size">24dp</dimen>
     <dimen name="indent_size">24dp</dimen>
-    <dimen name="quote_gap_size">3dp</dimen>
+    <dimen name="quote_gap_size">4dp</dimen>
     <dimen name="quote_stripe_width">3dp</dimen>
     <dimen name="line_dash_length">3dp</dimen>
     <dimen name="search_in_text_margin">48dp</dimen>
-    <dimen name="ripple_radius">24dp</dimen>
+    <dimen name="ripple_radius">28dp</dimen>
+    
+    <!-- Modern spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+    <dimen name="spacing_xxl">24dp</dimen>
+    <dimen name="spacing_3xl">32dp</dimen>
+    
+    <!-- Corner radius -->
+    <dimen name="corner_radius_sm">8dp</dimen>
+    <dimen name="corner_radius_md">12dp</dimen>
+    <dimen name="corner_radius_lg">16dp</dimen>
+    <dimen name="corner_radius_xl">20dp</dimen>
+    <dimen name="corner_radius_pill">100dp</dimen>
+    
+    <!-- Elevation -->
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
 </resources>

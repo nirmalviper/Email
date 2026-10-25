@@ -371,15 +371,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabSave"
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_padding"
-        android:contentDescription="@string/title_save"
+        android:contentDescription="@string/title_share"
+        android:tooltipText="@string/title_share"
         app:backgroundTint="?attr/colorFabBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/twotone_move_to_inbox_24"
+        app:elevation="6dp"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:srcCompat="@drawable/twotone_share_24"
         app:tint="?attr/colorFabForeground" />
 </androidx.constraintlayout.widget.ConstraintLayout>

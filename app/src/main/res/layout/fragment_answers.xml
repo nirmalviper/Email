@@ -51,6 +51,8 @@
         android:contentDescription="@string/title_add"
         android:tooltipText="@string/title_add"
         app:backgroundTint="?attr/colorFabBackground"
+        app:elevation="6dp"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
         app:srcCompat="@drawable/twotone_add_24"
         app:tint="?attr/colorFabForeground" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
