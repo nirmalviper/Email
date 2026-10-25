@@ -383,4 +383,19 @@
         app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
         app:srcCompat="@drawable/twotone_share_24"
         app:tint="?attr/colorFabForeground" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_padding"
+        android:contentDescription="@string/title_save"
+        android:tooltipText="@string/title_save"
+        android:visibility="gone"
+        app:backgroundTint="?attr/colorFabBackground"
+        app:elevation="6dp"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:srcCompat="@drawable/twotone_save_24"
+        app:tint="?attr/colorFabForeground" />
 </androidx.constraintlayout.widget.ConstraintLayout>
